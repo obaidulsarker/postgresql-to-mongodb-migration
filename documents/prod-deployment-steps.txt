@@ -1,0 +1,26 @@
+1. Docker pull from Docker registry
+--- From Dev Server
+docker pull 192.168.169.66/postgresql-to-mongodb-migration/postgresql-to-mongodb-migration:latest
+
+2. Save docker images in Dev server
+--- From Dev Server
+docker save 192.168.169.66/postgresql-to-mongodb-migration/postgresql-to-mongodb-migration:latest > /tmp/mongodb-to-postgresql-migration.tar.gz
+
+3. Download docker images to local PC
+
+4. Upload docker images in Prod server (deployment server)
+
+5. Load docker image in Prod server
+cd /tmp/
+docker load -i postgresql-to-mongodb-migration.tar.gz
+
+5.2 Execute scrtip/pre-mig-script.sql in PostgreSQL database.
+
+5.3 Setup the env file and config/collection.xml file. There are three two PostgreSQL database. One is application database and another ETL pipeline metadata DB.
+
+6. Check docker images
+docker images
+
+7. Deploy the docker images
+cd /data/app/mongodb-archive
+./deploy-prod.sh
