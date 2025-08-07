@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Define variables
-DOCKER_REG=http://192.168.169.66
-HARBOR_USER="admin"
+DOCKER_REG=http://192.168.xxx.xxx
+HARBOR_USER="xxxxx"
 
-DOCKER_REG_HOST_IP=192.168.169.66
+DOCKER_REG_HOST_IP=192.168.xxx.xx
 PROJECT_NAME=postgresql-to-mongodb-migration
 REPO_NAME=postgresql-to-mongodb-migration
 APP_VERSION=latest

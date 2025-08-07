@@ -1,10 +1,10 @@
 1. Docker pull from Docker registry
 --- From Dev Server
-docker pull 192.168.169.66/postgresql-to-mongodb-migration/postgresql-to-mongodb-migration:latest
+docker pull 192.168.xx.xx/postgresql-to-mongodb-migration/postgresql-to-mongodb-migration:latest
 
 2. Save docker images in Dev server
 --- From Dev Server
-docker save 192.168.169.66/postgresql-to-mongodb-migration/postgresql-to-mongodb-migration:latest > /tmp/mongodb-to-postgresql-migration.tar.gz
+docker save 192.168.xx.xx/postgresql-to-mongodb-migration/postgresql-to-mongodb-migration:latest > /tmp/mongodb-to-postgresql-migration.tar.gz
 
 3. Download docker images to local PC
 

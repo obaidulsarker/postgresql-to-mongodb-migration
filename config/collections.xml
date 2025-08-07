@@ -1,15 +1,15 @@
 <db>
-<schema pg_schema_name="product" mongo_schema_name="seller-product">
-    <table table_no="1" table_name="ProductLogs" mongo_table_name="ProductLogs"  id_field_name="Id" created_ts_field_name="CreatedAt" updated_ts_field_name="UpdatedAt" status="Pending">
+<schema pg_schema_name="hrm" mongo_schema_name="hrm">
+    <table table_no="1" table_name="employee" mongo_table_name="employee"  id_field_name="Id" created_ts_field_name="CreatedAt" updated_ts_field_name="UpdatedAt" status="Pending">
         <fields>
-            "Id", "ProductId", "ParentSku", "ProductName", "Details", "CreatedAt", "UpdatedAt", "CreatedBy", "UpdatedBy", "StatusId"      
+            "Id", "EmpName", "Department", "DoB", "DoJ", "CreatedAt", "UpdatedAt", "CreatedBy", "UpdatedBy", "StatusId"      
         </fields>
         <field_mapping>
             <map pg_name="Id" mongo_name="_id"/>
-            <map pg_name="ProductId" mongo_name="ProductId"/> 
-            <map pg_name="ParentSku" mongo_name="ParentSku"/>             
-            <map pg_name="ProductName" mongo_name="ProductName"/>         
-            <map pg_name="Details" mongo_name="Details"/>   
+            <map pg_name="EmpName" mongo_name="EmpName"/> 
+            <map pg_name="Department" mongo_name="Department"/>             
+            <map pg_name="DoB" mongo_name="DoB"/>         
+            <map pg_name="DoJ" mongo_name="DoJ"/>   
             <map pg_name="CreatedAt" mongo_name="CreatedAt"/>      
             <map pg_name="UpdatedAt" mongo_name="UpdatedAt"/>   
             <map pg_name="CreatedBy" mongo_name="CreatedBy"/>
@@ -17,39 +17,22 @@
             <map pg_name="StatusId" mongo_name="StatusId"/>
         </field_mapping>
     </table>
-    <table table_no="2" table_name="ProductVariantLogs" mongo_table_name="ProductVariantLogs"  id_field_name="Id" created_ts_field_name="CreatedAt" updated_ts_field_name="UpdatedAt" status="Pending">
+    <table table_no="2" table_name="salary" mongo_table_name="salary"  id_field_name="Id" created_ts_field_name="CreatedAt" updated_ts_field_name="UpdatedAt" status="Pending">
         <fields>
-            "Id", "VariantId", "ProductId", "SellerSKU", "CurrentStockQty", "Price", "StatusId", "CreatedAt", "UpdatedAt", "CreatedBy", "UpdatedBy", "PromoPrice", "PromoStartAt", "PromoEndAt", "FreeItems", "IsVariantAvailable", "AttributeId1", "AttributeValueId1", "AttributeId2", "AttributeValueId2", "Name", "PurchasePrice", "IsDefault", "DiscountPercentage", "DiscountAmt", "ShopSKU", "VariantAttributeImages1", "VariantAttributeImages2"    
+            "Id", "EmpId", "Basic", "HouseRent", "Conveyance", "Gross", "StatusId", "CreatedAt", "UpdatedAt", "CreatedBy", "UpdatedBy"    
         </fields>
         <field_mapping>
             <map pg_name="Id" mongo_name="_id"/>
-            <map pg_name="VariantId" mongo_name="VariantId"/> 
-            <map pg_name="ProductId" mongo_name="ProductId"/>             
-            <map pg_name="SellerSKU" mongo_name="SellerSKU"/>         
-            <map pg_name="CurrentStockQty" mongo_name="CurrentStockQty"/>   
-            <map pg_name="Price" mongo_name="Price"/>      
+            <map pg_name="EmpId" mongo_name="EmpId"/> 
+            <map pg_name="Basic" mongo_name="Basic"/>             
+            <map pg_name="HouseRent" mongo_name="HouseRent"/>         
+            <map pg_name="Conveyance" mongo_name="Conveyance"/>   
+            <map pg_name="Gross" mongo_name="Gross"/>      
             <map pg_name="StatusId" mongo_name="StatusId"/>   
             <map pg_name="CreatedAt" mongo_name="CreatedAt"/>
             <map pg_name="UpdatedAt" mongo_name="UpdatedAt"/>
             <map pg_name="CreatedBy" mongo_name="CreatedBy"/>
             <map pg_name="UpdatedBy" mongo_name="UpdatedBy"/>
-            <map pg_name="PromoPrice" mongo_name="PromoPrice"/>
-            <map pg_name="PromoStartAt" mongo_name="PromoStartAt"/>
-            <map pg_name="PromoEndAt" mongo_name="PromoEndAt"/>
-            <map pg_name="FreeItems" mongo_name="FreeItems"/>
-            <map pg_name="IsVariantAvailable" mongo_name="IsVariantAvailable"/>
-            <map pg_name="AttributeId1" mongo_name="AttributeId1"/>
-            <map pg_name="AttributeValueId1" mongo_name="AttributeValueId1"/>
-            <map pg_name="AttributeId2" mongo_name="AttributeId2"/>
-            <map pg_name="AttributeValueId2" mongo_name="AttributeValueId2"/>
-            <map pg_name="Name" mongo_name="Name"/>
-            <map pg_name="PurchasePrice" mongo_name="PurchasePrice"/>
-            <map pg_name="IsDefault" mongo_name="IsDefault"/>
-            <map pg_name="DiscountPercentage" mongo_name="DiscountPercentage"/>
-            <map pg_name="DiscountAmt" mongo_name="DiscountAmt"/>
-            <map pg_name="ShopSKU" mongo_name="ShopSKU"/>
-            <map pg_name="VariantAttributeImages1" mongo_name="VariantAttributeImages1"/>
-            <map pg_name="VariantAttributeImages2" mongo_name="VariantAttributeImages2"/>
         </field_mapping>
     </table>
 </schema>

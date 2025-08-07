@@ -50,6 +50,6 @@ push_images:
     - docker rmi $DCR_REGISTRY/$PROJECT_NAME/$IMAGE_NAME:$APP_VERSION
     - docker rmi $DCR_REGISTRY/$PROJECT_NAME/$IMAGE_NAME:$LATEST_TAG
   tags:
-    - Foodi-Dev-Build-Server
+    - Dev-Build-Server
   only:
     - tags  # Include tag builds
